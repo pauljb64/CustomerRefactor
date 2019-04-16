@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1023]E:\Share\_src\Customer\App\App.test\bin\Debug\App.test.dll</TopNode>
+  <SelectedNode>[0-1023]E:\Share\_src\Customer\App\App.test\bin\Debug\App.test.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1023]E:\Share\_src\Customer\App\App.test\bin\Debug\App.test.dll" Expanded="true" />
+    <Node UniqueName="[0-1024]App" Expanded="true" />
+    <Node UniqueName="[0-1025]App.test" Expanded="true" />
+    <Node UniqueName="[0-1000]App.test.CustomerServiceTest" Expanded="true" />
+    <Node UniqueName="[0-1026]App.test.Mapper" Expanded="true" />
+    <Node UniqueName="[0-1027]App.test.Mapper.Test" Expanded="true" />
+  </Nodes>
+</VisualState>
