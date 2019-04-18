@@ -26,14 +26,14 @@ namespace App.test
         [Test]
         public void CreateVeryImportantCustomerTest()
         {
-            Domain.Entity.Company company = new Company { Id = 99, Classification = Classification.Bronze, Name = "ImportantClient" };
-          
+            var applicant = new Customer("test1Name", "Test1", "test@test.com", new DateTime(1985, 12, 31), 99);
+
             _customerCreditService.Setup(d => d.GetCreditLimit(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<DateTime>())).Returns(500);
-            var result = _creditScore.CalculateCustomerCreditLimit(company);
+            var result = _creditScore.CalculateCustomerCreditLimit(applicant);
           
             _customerCreditService.Verify(d => d.GetCreditLimit(It.IsAny<string>(),
                           It.IsAny<string>(), It.IsAny<DateTime>()), Times.Once);
-            Assert.AreEqual(500, result);
+            Assert.AreEqual(1000, result);
 
         }
 

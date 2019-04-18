@@ -19,5 +19,24 @@ namespace App.Domain.Entity
         public int CreditLimit { get; set; }
 
         public Company Company { get; set; }
+
+        public Customer(string firstname, string surname, string email, DateTime dateOfBirth, int companyId)
+        {
+            DateOfBirth = dateOfBirth;
+            EmailAddress = email;
+            Firstname = firstname;
+            Surname = surname;
+            CreditLimit = 0;
+            Company = null;
+            HasCreditLimit = false;
+
+        }
+        public Customer()
+        {
+        }
+
+        //These are changes
+
+
     }
 }

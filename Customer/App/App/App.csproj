@@ -50,8 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogic\CompanyValidator.cs" />
+    <Compile Include="BusinessLogic\CreditScore.cs" />
     <Compile Include="BusinessLogic\CustomerProvider.cs" />
     <Compile Include="BusinessLogic\CustomerValidator.cs" />
+    <Compile Include="Contracts\ICreditScore.cs" />
     <Compile Include="Contracts\ICustomerValidator.cs" />
     <Compile Include="Contracts\ICustomerProvider.cs" />
     <Compile Include="Contracts\ICompanyDataProvider.cs" />

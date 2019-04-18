@@ -17,9 +17,16 @@ namespace App.BusinessLogic
             _customerCreditService = CustomerCreditService;
 
         }
-        public int CalculateCustomerCreditLimit(Company CustomerCompany)
+        public int CalculateCustomerCreditLimit(Customer applicant)
         {
-            throw new NotImplementedException();
+            int creditLimit = 0;
+            using (_customerCreditService)
+            {
+                creditLimit = _customerCreditService.GetCreditLimit(applicant.Firstname, applicant.Surname, applicant.DateOfBirth);
+                creditLimit = creditLimit * 2;
+
+            }
+            return creditLimit;
         }
     }
 }

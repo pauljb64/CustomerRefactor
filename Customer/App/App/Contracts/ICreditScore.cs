@@ -10,7 +10,7 @@ namespace App.Contracts
     public interface ICreditScore
     {
  
-        int CalculateCustomerCreditLimit(Company CustomerCompany);
+        int CalculateCustomerCreditLimit(Customer applicant);
 
 
     }

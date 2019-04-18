@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreditScoreTest.cs" />
     <Compile Include="CustomerServiceTest.cs" />
     <Compile Include="CustomerProviderTest.cs" />
     <Compile Include="CustomerValidatorTest.cs" />
